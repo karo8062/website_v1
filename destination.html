@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="destination.css" />
+    <link rel="stylesheet" href="mutual.css" />
+    <title>Destinations</title>
+  </head>
+  <body>
+    <header>
+      <h3 class="filteroverskrift">Alle</h3>
+      <button data-pakker="alle" class="valgt">Alle</button>
+      <button data-pakker="basic">Basic</button>
+      <button data-pakker="premium">Premium</button>
+      <button data-pakker="exclusive">Exclusive</button>
+    </header>
+
+    <main id="destination"></main>
+
+    <template>
+      <article>
+        <h2 class="rejser"></h2>
+        <h3 class="hotel"></h3>
+        <h3 class="restauranter"></h3>
+        <h3 class="oplevelser"></h3>
+        <h3 class="pris"></h3>
+      </article>
+    </template>
+
+    <div id="popup">
+      <article>
+        <img class="billede_popup" src="" alt="" />
+        <h2 class="rejser"></h2>
+        <h3 class="hotel"></h3>
+        <h3 class="restauranter"></h3>
+        <h3 class="oplevelser"></h3>
+        <h3 class="pris"></h3>
+      </article>
+    </div>
+
+    <footer>
+
+    </footer>
+  </body>
+
+    <script src="script.js"></script>
+</html>
