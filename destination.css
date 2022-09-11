@@ -1,0 +1,11 @@
+#destination {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+article {
+  margin: 3rem;
+  padding: 2rem;
+  background-color: rgb(187, 180, 141);
+}

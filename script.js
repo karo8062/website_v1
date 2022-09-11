@@ -4,11 +4,11 @@ let rejser;
 let filter = "alle";
 const header = document.querySelector("h3");
 
-const filterKnapper = document.querySelectorAll(" header button");
+const filterKnapper = document.querySelectorAll("header button");
 filterKnapper.forEach((knap) => knap.addEventListener("click", filtrerPakker));
 
 function filtrerPakker() {
-  filter = this.dataset.kategori; //når der klikkes på en knap laves filterknappen om til dataattributten "data-troende" fra HTMLen.
+  filter = this.dataset.pakke; //når der klikkes på en knap laves filterknappen om til dataattributten "data-troende" fra HTMLen.
   document.querySelector(".valgt").classList.remove("valgt"); //fjern klassen valgt fra den knap
   this.classList.add("valgt"); //markerer den knap, som der klikkes på
   header.textContent = this.textContent; //this henviser til button der klikkes på. Gør at teksten ændres, når der filtreres
@@ -24,23 +24,24 @@ async function hentData() {
 
 //Mangler at ændrer navne//
 function vis() {
-  console.log(pakker);
+  // console.log(pakker);
   const destination = document.querySelector("#destination");
   const skabelon = document.querySelector("template").content;
   destination.textContent = "";
   rejser.forEach((pakkeloesninger) => {
-    if (filter == pakkeloesninger.kategori || filter == "alle") {
+    if (filter == pakkeloesninger.pakke || filter == "alle") {
       const klon = skabelon.cloneNode(true);
-      klon.querySelector("img").src = "billeder/" + pakkeloesninger.billednavn + "-md.jpg"; //referer til kolonnernes navne i restdb
-      klon.querySelector("img").alt = pakkeloesninger.billednavn;
+      // klon.querySelector("img").src = "billeder/" + pakkeloesninger.billednavn + "-md.jpg"; //referer til kolonnernes navne i restdb
+      // klon.querySelector("img").alt = pakkeloesninger.billednavn;
       klon.querySelector("article").addEventListener("click", () => visPopup(pakkeloesninger));
-      klon.querySelector("h2").textContent = pakkeloesninger.rejser;
-      klon.querySelector("h3").textContent = pakkeloesninger.hotel;
-      klon.querySelector("h3").textContent = pakkeloesninger.restauranter;
-      klon.querySelector("h3").textContent = pakkeloesninger.oplevelser;
-      klon.querySelector("h3").textContent = pakkeloesninger.pris + " kr.";
-      klon.querySelector("h3").style.borderRadius = "lem";
-      forside.appendChild(klon);
+      klon.querySelector("h2").textContent = pakkeloesninger.destination;
+      klon.querySelector(".pakke").textContent = pakkeloesninger.pakke;
+      klon.querySelector(".hotel").textContent = pakkeloesninger.hotel;
+      klon.querySelector(".restauranter").textContent = pakkeloesninger.restauranter;
+      klon.querySelector(".oplevelser").textContent = pakkeloesninger.oplevelser;
+      klon.querySelector(".pris").textContent = pakkeloesninger.pris + " kr.";
+      klon.querySelector("article").style.borderRadius = "lem";
+      destination.appendChild(klon);
     }
   });
 }
