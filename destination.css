@@ -1,11 +1,39 @@
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 3rem;
+  margin-top: 4rem;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
 #destination {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 1rem;
+  margin: 3rem;
 }
 
 article {
   margin: 3rem;
   padding: 2rem;
   background-color: rgb(187, 180, 141);
+}
+
+#popup article {
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+}
+
+#popup {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
