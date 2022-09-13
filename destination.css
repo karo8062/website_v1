@@ -1,12 +1,7 @@
 header nav {
   display: flex;
   justify-content: center;
-  margin-inline: 3rem;
   margin-top: 4rem;
-}
-
-.knapper {
-  display: flex;
 }
 
 .filteroverskrift {
@@ -17,7 +12,8 @@ button {
   background-color: transparent;
   color: #1b8fad;
   font-family: helvetica_medium;
-  margin-right: 2rem;
+  border-right: #1b8fad solid 1px;
+  padding-inline: 1rem;
 }
 
 button:hover {
