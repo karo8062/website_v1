@@ -1,5 +1,24 @@
 header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sign_in {
   display: flex;
+  justify-content: end;
+  margin-right: var(--space-s);
+  margin-top: var(--space-m);
+  font-family: helvetica_bold;
+  color: var(--orange);
+}
+
+nav ul li {
+  margin-left: -4rem;
+  text-decoration: none;
+  font-family: helvetica_bold;
+  list-style-type: none;
+  line-height: 1.5rem;
+  color: var(--blue);
 }
 
 body {
@@ -72,10 +91,6 @@ img {
   margin-inline: 9rem;
 }
 
-li {
-  line-height: var(--space-s);
-}
-
 .pris {
   display: flex;
   justify-content: center;
@@ -86,7 +101,6 @@ li {
 /*POPUP*/
 #popup article {
   background-color: white;
-  width: 90%;
 }
 
 #popup {
@@ -100,6 +114,20 @@ li {
   display: none;
 }
 
+.infoboks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.infoboks:first-child {
+  margin-top: var(--space-s);
+}
+.popup_billede1 {
+  max-width: 110%;
+  margin-top: var(--space-xs);
+}
 .bestil_rejse {
   background-color: var(--blue);
   color: white;
