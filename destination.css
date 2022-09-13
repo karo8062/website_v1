@@ -14,7 +14,7 @@ button {
 
   border: none;
   background-color: transparent;
-  border-right: #1b8fad solid 1px;
+  border-right: var(--blue) solid 1px;
   padding-inline: 1rem;
 }
 
@@ -23,7 +23,7 @@ button {
 }
 
 button:hover {
-  border-bottom: #1b8fad solid 2px;
+  border-bottom: var(--blue) solid 2px;
 }
 
 #destination {
@@ -33,18 +33,46 @@ button:hover {
 
 article {
   margin: 4rem;
-  padding: 2rem;
   border: #c7c7c7 1px solid;
   box-shadow: 6px 8px 10px #c7c7c7;
-  border-bottom: #1b8fad;
+  border-bottom: 2px solid var(--blue);
 }
 
+/*PAKKEINDHOLD*/
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
 img {
-  max-width: 50%;
+  max-width: 100%;
 }
 
+.pakke {
+  display: flex;
+  justify-content: center;
+}
+
+.gold_line {
+  border: 1.5px var(--guld) solid;
+  margin-inline: 9rem;
+}
+
+li {
+  margin-left: var(--space-xl);
+  line-height: var(--space-s);
+}
+
+.pris {
+  display: flex;
+  justify-content: center;
+  margin-block: var(--space-s);
+  font-weight: bolder;
+}
+
+/*POPUP*/
 #popup article {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   width: 60%;
 }
 
@@ -58,3 +86,5 @@ img {
   align-items: center;
   display: none;
 }
+
+ 

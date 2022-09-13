@@ -13,7 +13,9 @@
   src: url(fonts/HelveticaNeueBd.ttf);
 }
 
-p {
+p,
+h3,
+li {
   font-family: helvetica_light;
 }
 
@@ -21,17 +23,11 @@ h2 {
   font-family: helvetica_bold;
 }
 
-* {
-  all: unset;
-  display: revert;
-  cursor: revert;
-  /*overstående nustiller alle HTML regler for H1, h2 mm.*/
-}
-
 html {
   /* farve variabler */
   --blue: #1b8fad;
   --orange: #ce6433;
+  --guld: #ba9929;
 
   /* gap variabler */
   --space-xs: 1rem;

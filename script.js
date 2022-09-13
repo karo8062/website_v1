@@ -26,8 +26,8 @@ function vis() {
   const skabelon = document.querySelector("template").content;
   destination.textContent = "";
   rejser.forEach((pakkeloesninger) => {
+    console.log(pakkeloesninger.billednavn);
     if (filter == pakkeloesninger.pakke || filter == "alle") {
-      console.log(pakkeloesninger.billednavn);
       const klon = skabelon.cloneNode(true);
       klon.querySelector("img").src = "fotos/" + pakkeloesninger.billednavn;
       klon.querySelector("article").addEventListener("click", () => visPopup(pakkeloesninger));
@@ -36,7 +36,7 @@ function vis() {
       klon.querySelector(".beskrivelse_hotel").textContent = pakkeloesninger.beskrivelse_hotel;
       klon.querySelector(".beskrivelse_restaurant").textContent = pakkeloesninger.beskrivelse_restaurant;
       klon.querySelector(".pakke").textContent = pakkeloesninger.pakke;
-      klon.querySelector(".pris").textContent = "Pris: " + pakkeloesninger.pris;
+      klon.querySelector(".pris").textContent = "Pris: " + pakkeloesninger.pris + "";
       klon.querySelector("article").style.borderRadius = "lem";
       destination.appendChild(klon);
     }
@@ -54,6 +54,7 @@ function visPopup(pakkeData) {
   popup.querySelector(".hotel").textContent = "Hotel: " + pakkeData.hotel;
   popup.querySelector(".restauranter").textContent = "Restaurant: " + pakkeData.restauranter;
   popup.querySelector(".oplevelser").textContent = "Activities: " + pakkeData.oplevelser;
+  popup.querySelector(".popup_beskrivelse").textContent = pakkeData.popup_beskrivelse;
   popup.querySelector(".pris").textContent = pakkeData.pris + " kr.";
 }
 hentData(); //loop
