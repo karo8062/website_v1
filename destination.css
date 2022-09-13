@@ -8,12 +8,18 @@ header nav {
   display: none;
 }
 button {
+  color: var(--blue);
+  font-family: helvetica_medium;
+  font-size: 1rem;
+
   border: none;
   background-color: transparent;
-  color: #1b8fad;
-  font-family: helvetica_medium;
   border-right: #1b8fad solid 1px;
   padding-inline: 1rem;
+}
+
+.knapper :last-child {
+  border-right: none;
 }
 
 button:hover {
@@ -26,10 +32,11 @@ button:hover {
 }
 
 article {
-  margin: 3rem;
+  margin: 4rem;
   padding: 2rem;
   border: #c7c7c7 1px solid;
   box-shadow: 6px 8px 10px #c7c7c7;
+  border-bottom: #1b8fad;
 }
 
 img {
