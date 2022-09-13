@@ -4,7 +4,7 @@ let rejser;
 let filter = "alle";
 const header = document.querySelector("h3");
 
-const filterKnapper = document.querySelectorAll("header button");
+const filterKnapper = document.querySelectorAll("button");
 filterKnapper.forEach((knap) => knap.addEventListener("click", filtrerPakker));
 
 function filtrerPakker() {
