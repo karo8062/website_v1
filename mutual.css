@@ -1,4 +1,23 @@
+/*-----------FONTE------------*/
 @font-face {
-  font-family: helvetica_medium;
+  font-family: helvetica_medium; /*Bruges i navigation bar*/
   src: url(fonts/HelveticaNeueMedium.ttf);
 }
+
+@font-face {
+  font-family: helvetica_light; /*bruges til brødtekst*/
+  src: url(fonts/HelveticaNeueLight.ttf);
+}
+@font-face {
+  font-family: helvetica_bold; /*bruges til h2 og h3*/
+  src: url(fonts/HelveticaNeueBd.ttf);
+}
+
+p {
+  font-family: helvetica_light;
+}
+
+h2 {
+  font-family: helvetica_bold;
+}
+
