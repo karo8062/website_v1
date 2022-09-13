@@ -1,25 +1,43 @@
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-inline: 3rem;
   margin-top: 4rem;
 }
 
+.knapper {
+  display: flex;
+}
+
+.filteroverskrift {
+  display: none;
+}
 button {
   border: none;
   background-color: transparent;
+  color: #1b8fad;
+  font-family: helvetica_medium;
+  margin-right: 2rem;
+}
+
+button:hover {
+  border-bottom: #1b8fad solid 2px;
 }
 
 #destination {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  margin: 3rem;
 }
 
 article {
   margin: 3rem;
   padding: 2rem;
-  background-color: rgb(187, 180, 141);
+  border: #c7c7c7 1px solid;
+  box-shadow: 6px 8px 10px #c7c7c7;
+}
+
+img {
+  max-width: 50%;
 }
 
 #popup article {
