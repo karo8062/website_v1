@@ -1,0 +1,26 @@
+/* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
+@media (min-width: 600px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  /* order så billedet kommer først i mobile version men sidst i web-version*/
+  .order {
+    order: 2;
+  }
+}
+h3 {
+  font-family: ;
+  font-size: ;
+  line-height: ;
+  font-weight: ;
+  margin-bottom: ;
+  color: #ce6433;
+}
+element_4 h3 {
+  color: #59a1b8;
+}
+.couples {
+  padding: ;
+}
