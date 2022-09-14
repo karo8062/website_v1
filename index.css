@@ -165,7 +165,6 @@ ul {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 5em;
-    margin-top: 0.5rem;
   }
 
   /* TIL STEP BY STEP GUIDEN */
