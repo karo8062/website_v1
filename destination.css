@@ -21,10 +21,6 @@ nav ul li {
   color: var(--blue);
 }
 
-body {
-  margin: 0;
-}
-
 a:link {
   text-decoration: none;
 }
@@ -76,6 +72,12 @@ article {
 h2 {
   display: flex;
   justify-content: center;
+}
+
+.hotel,
+.restauranter,
+.oplevelser {
+  font-family: helvetica_medium;
 }
 img {
   max-width: 100%;
@@ -134,9 +136,11 @@ article .gold_line {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   position: relative;
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
 }
 .popup_billede1 {
-  max-width: 100%;
+  max-width: 45%;
   margin-top: var(--space-xs);
   grid-column: 1 / span 8;
   grid-row: 1;
@@ -146,7 +150,14 @@ article .gold_line {
 .popup_billede2 {
   grid-column: 4/-1;
   grid-row: 1;
-  max-width: 100%;
+  max-width: 50%;
+}
+
+.popup_billede3 {
+  grid-column: 8/span 7;
+  grid-row: 1;
+  max-width: 80%;
+  margin-top: var(--space-xs);
 }
 .containerline {
   border: 1px solid rgb(190, 190, 190);
@@ -154,7 +165,7 @@ article .gold_line {
 
 #popup .pris {
   display: flex;
-  justify-content: start;
+  justify-content: center;
 }
 .bestil_rejse {
   background-color: var(--blue);
@@ -185,5 +196,23 @@ article .gold_line {
 
   .filteroverskrift {
     display: flex;
+  }
+
+  /*POPUP VINDUE*/
+  .img-stack {
+    margin-block: var(--space-s);
+  }
+  .popup_billede1 {
+    max-width: 30%;
+    margin-top: var(--space-xs);
+    grid-column: 4 / span 8;
+    grid-row: 1;
+    z-index: 1;
+  }
+
+  .popup_billede2 {
+    grid-column: 6 / span 4;
+    grid-row: 1;
+    max-width: 60%;
   }
 }
