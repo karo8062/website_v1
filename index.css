@@ -162,7 +162,7 @@ ul {
     flex-direction: column;
     margin-top: 3.5rem;
     align-items: flex-end;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
   ul {
@@ -222,5 +222,9 @@ ul {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
+  }
+
+  .hide {
+    display: inline;
   }
 }
