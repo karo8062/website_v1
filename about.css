@@ -1,13 +1,40 @@
 /* Main */
 img {
-  height: auto;
-  width: 100%;
-  background-size: cover;
-  background-position: 100%, 100%;
+  max-width: 100%;
 }
 main {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* header */
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sign_in {
+  display: flex;
+  justify-content: end;
+  margin-right: var(--space-s);
+  margin-top: var(--space-m);
+  font-family: helvetica_bold;
+  color: var(--orange);
+}
+nav ul li {
+  margin-left: -4rem;
+  text-decoration: none;
+  font-family: helvetica_bold;
+  list-style-type: none;
+  line-height: 1.5rem;
+  color: var(--blue);
+}
+
+/* Overskriften */
+h1 {
+  text-align: center;
+  color: var(--blue);
+  font-size: 3rem;
 }
 
 /* inhold */
@@ -15,20 +42,14 @@ main {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 2rem;
   }
 }
 .tekst {
-  text-align: center;
-  padding-top: 5rem;
   margin: 2rem;
 }
-
-/* Overskriften */
-h1 {
-  text-align: center;
-  margin-right: 8rem;
-}
-#overskrift {
-  margin-left: 10rem;
+.linje {
+  border: 1.5px var(--orange) solid;
+  margin-inline: 9rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
