@@ -1,44 +1,95 @@
-/* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
+.couples {
+  /* Main */
+  max-width: 900px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
 
-.sign_in {
+.header_billede {
+  margin-bottom: 100px;
+}
+
+/*.sign_in {
   display: flex;
   justify-content: end;
   margin-right: var(--space-s);
-  margin-top: var(--space-m);
   font-family: helvetica_bold;
   color: var(--orange);
+  margin-bottom: 3px;
+  max-width: none;
 }
 
-nav ul li {
-  margin-left: -4rem;
-  text-decoration: none;
+.logo {
+  display: flex;
+  justify-content: left;
+}
+
+header nav {
+  overflow-x: auto;
+}
+
+header nav ul {
+  margin-top: 1.6rem;
+  /*padding: 0.2rem;
+  margin-left: 250px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  max-width: none;
+}
+
+header nav li {
+  text-align: center;
+  width: 7rem;
+  flex-shrink: 0;
+  max-width: none;
+}
+
+a {
   font-family: helvetica_bold;
-  list-style-type: none;
-  line-height: 1.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
   color: var(--blue);
 }
-@media (min-width: 600px) {
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-  /* order så billedet kommer først i mobile version men sidst i web-version*/
-  .order {
-    order: 1;
-  }
+
+a:hover {
+  color: var(--orange);
 }
-h3 {
-  font-family: helvetica_light;
-  font-size: ;
-  line-height: ;
-  font-weight: ;
-  margin-bottom: ;
+*/
+.couples h3 {
+  font-family: helvetica_bold;
+  font-size: 1.2rem;
+  line-height: 0;
   color: var(--orange);
 }
 .blå {
   color: var(--blue);
 }
-.couples {
-  padding: ;
+.couples p {
+  max-width: 45ch;
+  font-size: 1rem;
+  color: rgb(10, 10, 10);
+  line-height: 1.5;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
+@media (min-width: 600px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+  }
+  /* order så billedet kommer først i mobile version men sidst i web-version*/
+  .order {
+    order: 1;
+  }
 }
