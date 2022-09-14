@@ -145,6 +145,7 @@ ul {
     display: flex;
     flex-direction: row;
     margin-top: 3.5rem;
+    margin-right: var(--space-m);
     gap: 5rem;
     justify-content: center;
   }
