@@ -1,4 +1,27 @@
 /* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sign_in {
+  display: flex;
+  justify-content: end;
+  margin-right: var(--space-s);
+  margin-top: var(--space-m);
+  font-family: helvetica_bold;
+  color: var(--orange);
+}
+
+nav ul li {
+  margin-left: -4rem;
+  text-decoration: none;
+  font-family: helvetica_bold;
+  list-style-type: none;
+  line-height: 1.5rem;
+  color: var(--blue);
+}
 @media (min-width: 600px) {
   .grid_1-1 {
     display: grid;
