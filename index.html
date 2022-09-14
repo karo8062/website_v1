@@ -5,11 +5,401 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>forside</title>
+    <link rel="stylesheet" href="https://use.typekit.net/hbq1ujc.css" />
+
+    <style>
+      * {
+        all: unset;
+        display: revert;
+        cursor: revert;
+        box-sizing: border-box;
+      }
+
+      .splash {
+        background-image: url(splash3-kopi.png);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        max-width: none;
+      }
+
+      .logo {
+        max-width: 20%;
+        margin-bottom: -90px;
+      }
+
+      ul {
+        margin-top: 2rem;
+      }
+
+      h3 {
+        font-weight: 800;
+      }
+      /* NAVIGATION BAR nav {
+        color: rgba(255, 255, 255, 0.712);
+        font-family: semplicitapro, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 1em;
+        list-style: none;
+        cursor: pointer;
+        margin-left: 7rem;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: column;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 5em;
+        margin-top: 0.5rem;
+      }
+
+      nav ul li a,
+      nav ul li a:after,
+      nav ul li a:before {
+        transition: all 0.3s;
+      }
+      nav ul li a:hover {
+        color: rgb(255, 255, 255);
+        font-size: 1.1rem;
+      }
+      .signin {
+        color: orange;
+      }
+      .signin:hover {
+        color: white;
+      }
+
+      .logoimg {
+        max-width: 100%;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+      } */
+
+      /* MOBILE */
+      @media only screen and (max-width: 767px) {
+        /* Navigation-bar */
+        nav {
+          color: rgba(255, 255, 255, 0.712);
+          font-family: semplicitapro, sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          font-size: 1em;
+          list-style: none;
+          cursor: pointer;
+          margin-left: 7rem;
+        }
+
+        .flex {
+          display: flex;
+          flex-direction: column;
+        }
+
+        ul {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          gap: 5em;
+          margin-top: 0.5rem;
+        }
+
+        nav ul li a,
+        nav ul li a:after,
+        nav ul li a:before {
+          transition: all 0.3s;
+        }
+        nav ul li a:hover {
+          color: rgb(255, 255, 255);
+          font-size: 1.1rem;
+        }
+        .signin {
+          color: orange;
+        }
+        .signin:hover {
+          color: white;
+        }
+
+        .logoimg {
+          max-width: 100%;
+          margin-top: 2rem;
+          margin-left: 0.5rem;
+        }
+
+        footer {
+          background-color: #009cb2;
+          font-size: 0.5em;
+          width: 100%;
+          height: 150px;
+          font-family: semplicitapro, sans-serif;
+          font-style: normal;
+          color: white;
+        }
+
+        .grid_1-1-1 {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 3em;
+          margin-left: 3em;
+          margin-top: 2em;
+        }
+
+        #copy {
+          grid-column: 2 / span 2;
+          grid-row: 2;
+          text-align: end;
+          margin-right: 2em;
+          margin-top: 3em;
+        }
+
+        .container {
+          max-width: 15%;
+          display: flex;
+          flex-direction: row;
+        }
+
+        .col1,
+        .col2,
+        .col3 {
+          margin-top: 1rem;
+        }
+        .grid_1-1-1-1 {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 3rem;
+          margin: 2rem 2rem 2rem 2rem;
+        }
+
+        .hide {
+          display: none;
+        }
+
+        .circle {
+          border: 2px solid black;
+          border-radius: 50%;
+          padding: 10px;
+        }
+
+        /* FORSIDETXT */
+        #splashtext {
+          color: white;
+          font-family: semplicitapro, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1em;
+          position: absolute;
+          left: 50px;
+          bottom: 90px;
+        }
+
+        #splashtext2 {
+          font-size: 2em;
+          font-weight: 700;
+        }
+      }
+
+      /* WEB */
+      @media only screen and (min-width: 767px) {
+        /* LOGO */
+        .logoimg {
+          max-width: 40%;
+          margin-top: 2rem;
+          margin-left: 0.5rem;
+        }
+
+        /* NAVIGATION BAR */
+        .flex {
+          display: flex;
+          flex-direction: row;
+          gap: 5rem;
+          list-style: none;
+          margin-left: 65rem;
+          margin-top: -11rem;
+        }
+
+        .signin {
+          display: flex;
+          justify-content: end;
+          list-style: none;
+          margin-right: 2rem;
+          margin-top: -1rem;
+          font-weight: 800;
+        }
+
+        /* TIL STEP BY STEP GUIDEN */
+        .circle {
+          border: 2px solid black;
+          border-radius: 50%;
+          padding: 10px;
+          max-width: 30%;
+        }
+
+        .grid_1-1-1-1 {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 3rem;
+          margin: 5rem 5rem 5rem 5rem;
+        }
+
+        /* FORSIDETXT */
+        #splashtext {
+          color: white;
+          font-family: semplicitapro, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1.5em;
+          position: absolute;
+          left: 100px;
+          bottom: 100px;
+        }
+
+        #splashtext2 {
+          font-size: 2em;
+          font-weight: 700;
+        }
+        /* footer */
+        footer {
+          background-color: #009cb2;
+          font-size: 0.8em;
+          width: 100%;
+          height: 290px;
+          font-family: semplicitapro, sans-serif;
+          font-style: normal;
+          color: white;
+        }
+
+        .grid_1-1-1 {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 3em;
+          margin-left: 3em;
+          margin-top: 5rem;
+        }
+
+        #copy {
+          grid-column: 3 / span 2;
+          grid-row: 2;
+          text-align: end;
+          margin-top: 2em;
+          margin-right: 2rem;
+          font-size: 0.7rem;
+        }
+
+        .container {
+          max-width: 13%;
+          display: flex;
+          flex-direction: row;
+          margin-top: 1rem;
+        }
+
+        .col1,
+        .col2,
+        .col3,
+        .col4 {
+          margin-top: 2rem;
+        }
+        .col1 p,
+        .col2 p,
+        .col3 p,
+        .col4 p {
+          margin-top: 1rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <main>
-      <article></article>
+    <main class="splash">
+      <header class="grid2_1-1-1">
+        <div class="logo">
+          <a href="index.html"> <img src="logoFINAL_WHITE.svg" alt="logo" class="logoimg" /></a>
+        </div>
+        <nav>
+          <ul>
+            <div class="flex">
+              <li><a href="side2.html">ABOUT</a></li>
+              <li><a href="side3.html">DESTINATIONS</a></li>
+              <li><a href="side4.html">CONTACT</a></li>
+            </div>
+            <div class="signin">
+              <li><a href="#">SIGN IN</a></li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="splashtext">
+        <p>SIMPLE WAY TO FIND</p>
+        <p id="splashtext2">(Y)OUR DESTINATION</p>
+        <p>AND FIND LOVE.</p>
+      </section>
     </main>
+
+    <section>
+      <div class="grid_1-1-1-1">
+        <div>
+          <img src="sign_in.svg" alt="signin" class="circle" />
+          <h3>1. Sign In</h3>
+          <p class="hide">Create an account and fill in the attached application with preferences and wishes for the perfect dream date.</p>
+        </div>
+        <div>
+          <img src="choose.svg" alt="choose" class="circle" />
+          <h3>2. Choose your destination</h3>
+          <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sequi dolorum voluptates vitae expedita.</p>
+        </div>
+        <div>
+          <img src="bag.svg" alt="signin" class="circle" />
+          <h3>3. Pack your things</h3>
+          <p class="hide">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus itaque blanditiis repellat qui.</p>
+        </div>
+        <div>
+          <img src="match.svg" alt="signin" class="circle" />
+          <h3>4. We find your soulmate</h3>
+          <p class="hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, officia! Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <img src="travel.png" alt="travel" />
+        <div>
+          <p>TRAVEL INTO YOUR FUTURE</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="grid_1-1-1">
+        <div class="col1">
+          <h3>LEGAL</h3>
+          <p>Privacy</p>
+          <p>Terms</p>
+          <p>Cookie Policy</p>
+          <p>Intellectual Policy</p>
+        </div>
+        <div class="col2">
+          <h3>CAREERS</h3>
+          <p>Careers Portal</p>
+          <p>Tech Blog</p>
+        </div>
+        <div class="col3">
+          <h3>SOCIAL</h3>
+          <div class="container">
+            <img src="insta.svg" alt="insta" />
+            <img src="fb.svg" alt="fb" />
+            <img src="twitter.svg" alt="twitter" />
+          </div>
+        </div>
+        <div class="col4">
+          <p>FAQ</p>
+          <p>Press</p>
+          <p>Contact</p>
+        </div>
+        <p id="copy">© 2022 Our Destination, All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>
