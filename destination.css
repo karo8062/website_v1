@@ -8,14 +8,14 @@ header {
   justify-content: end;
   margin-right: var(--space-s);
   margin-top: var(--space-m);
-  font-family: helvetica_bold;
+  /* font-family: helvetica_bold; */
   color: var(--orange);
 }
 
 nav ul li {
   margin-left: -4rem;
   text-decoration: none;
-  font-family: helvetica_bold;
+  /* font-family: helvetica_bold; */
   list-style-type: none;
   line-height: 1.5rem;
   color: var(--blue);
@@ -41,7 +41,7 @@ a:link {
 }
 button {
   color: var(--blue);
-  font-family: helvetica_medium;
+  /* font-family: helvetica_medium; */
   font-size: var(--space-xs);
 
   border: none;
@@ -125,13 +125,21 @@ img {
   margin-top: var(--space-s);
 }
 .popup_billede1 {
-  max-width: 110%;
+  max-width: 100%;
   margin-top: var(--space-xs);
+}
+.containerline {
+  border: 1px solid rgb(190, 190, 190);
+  margin-block: var(--space-s);
+}
+#popup .pris {
+  display: flex;
+  justify-content: start;
 }
 .bestil_rejse {
   background-color: var(--blue);
   color: white;
-  font-family: helvetica_light;
+  /* font-family: helvetica_light; */
   font-size: 0.7rem;
   border-right: none;
   padding-inline: var(--space-xs);

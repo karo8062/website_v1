@@ -26,6 +26,7 @@ function vis() {
   const destination = document.querySelector("#destination");
   const skabelon = document.querySelector("template").content;
   destination.textContent = "";
+  console.log("pakkeloesninger");
   rejser.forEach((pakkeloesninger) => {
     if (filter == pakkeloesninger.pakke || filter == "alle") {
       const klon = skabelon.cloneNode(true);
@@ -52,11 +53,10 @@ function visPopup(pakkeData) {
   popup.style.display = "flex";
   popup.querySelector("h2").textContent = pakkeData.destination;
   popup.querySelector("img").src = "popup_fotos/" + pakkeData.popup_billede;
-  popup.querySelector("img").textContent = pakkeData.destination;
-  popup.querySelector("img").textContent = pakkeData.destination;
   popup.querySelector(".hotel").textContent = "Hotel: " + pakkeData.hotel;
   popup.querySelector(".restauranter").textContent = "Restaurant: " + pakkeData.restauranter;
   popup.querySelector(".oplevelser").textContent = "Activities: " + pakkeData.oplevelser;
+  popup.querySelector(".popup_beskrivelse").textContent = pakkeData.popup_beskrivelse;
   popup.querySelector(".pris").textContent = "Pris:" + pakkeData.pris + ",-";
 }
 
