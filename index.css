@@ -151,6 +151,25 @@ h3 {
     font-size: 2em;
     font-weight: 700;
   }
+
+  /* TRAVEL PIC */
+  .travelimg {
+    max-width: 100%;
+  }
+
+  .container_travel {
+    position: relative;
+  }
+  .text_block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+  }
 }
 
 /* WEB */
@@ -211,5 +230,25 @@ h3 {
   #splashtext2 {
     font-size: 2em;
     font-weight: 700;
+  }
+
+  /* TRAVEL PIC */
+  .travelimg {
+    max-width: 100%;
+  }
+
+  .container_travel {
+    position: relative;
+  }
+  .text_block {
+    position: absolute;
+    font-size: 2rem;
+    bottom: 129px;
+    right: 400px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
   }
 }
