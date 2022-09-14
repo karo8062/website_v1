@@ -115,26 +115,43 @@ article ul {
   justify-content: center;
   align-items: center;
   display: none;
+  background-color: rgba(0, 0, 0, 0.449);
+  overflow-y: scroll;
+  padding-top: var(--space-m);
 }
 
-.infoboks {
+#popup article {
+  padding-inline: var(--space-s);
+}
+
+article .gold_line {
+  margin-inline: var(--space-m);
+}
+
+/*billeder_popup*/
+
+.img-stack {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-s);
-  padding: var(--space-s);
-}
-
-.infoboks:first-child {
-  margin-top: var(--space-s);
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
 }
 .popup_billede1 {
   max-width: 100%;
   margin-top: var(--space-xs);
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.popup_billede2 {
+  grid-column: 4/-1;
+  grid-row: 1;
+  max-width: 100%;
 }
 .containerline {
   border: 1px solid rgb(190, 190, 190);
-  margin-block: var(--space-s);
 }
+
 #popup .pris {
   display: flex;
   justify-content: start;
