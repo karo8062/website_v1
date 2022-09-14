@@ -134,9 +134,10 @@ article .gold_line {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   position: relative;
+  padding-top: var(--space-xs);
 }
 .popup_billede1 {
-  max-width: 100%;
+  max-width: 45%;
   margin-top: var(--space-xs);
   grid-column: 1 / span 8;
   grid-row: 1;
@@ -146,7 +147,7 @@ article .gold_line {
 .popup_billede2 {
   grid-column: 4/-1;
   grid-row: 1;
-  max-width: 100%;
+  max-width: 50%;
 }
 .containerline {
   border: 1px solid rgb(190, 190, 190);
