@@ -52,7 +52,8 @@ function visPopup(pakkeData) {
   popup.style.display = "block";
   popup.style.display = "flex";
   popup.querySelector("h2").textContent = pakkeData.destination;
-  popup.querySelector("img").src = "popup_fotos/" + pakkeData.popup_billede;
+  popup.querySelector(".popup_billede1").src = "popup_fotos/" + pakkeData.popup_billede1;
+  popup.querySelector(".popup_billede2").src = "popup_fotos/" + pakkeData.popup_billede2;
   popup.querySelector(".hotel").textContent = "Hotel: " + pakkeData.hotel;
   popup.querySelector(".restauranter").textContent = "Restaurant: " + pakkeData.restauranter;
   popup.querySelector(".oplevelser").textContent = "Activities: " + pakkeData.oplevelser;

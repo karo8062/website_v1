@@ -1,0 +1,215 @@
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
+
+.splash {
+  background-image: url(fotos/splash3-kopi.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  max-width: none;
+}
+
+.logo {
+  max-width: 20%;
+  margin-bottom: -90px;
+}
+
+ul {
+  margin-top: 2rem;
+}
+
+h3 {
+  font-weight: 800;
+}
+/* NAVIGATION BAR nav {
+        color: rgba(255, 255, 255, 0.712);
+        font-family: semplicitapro, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 1em;
+        list-style: none;
+        cursor: pointer;
+        margin-left: 7rem;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: column;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 5em;
+        margin-top: 0.5rem;
+      }
+
+      nav ul li a,
+      nav ul li a:after,
+      nav ul li a:before {
+        transition: all 0.3s;
+      }
+      nav ul li a:hover {
+        color: rgb(255, 255, 255);
+        font-size: 1.1rem;
+      }
+      .signin {
+        color: orange;
+      }
+      .signin:hover {
+        color: white;
+      }
+
+      .logoimg {
+        max-width: 100%;
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+      } */
+
+/* MOBILE */
+@media only screen and (max-width: 767px) {
+  /* Navigation-bar */
+  nav {
+    color: rgba(255, 255, 255, 0.712);
+    font-family: semplicitapro, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1em;
+    list-style: none;
+    cursor: pointer;
+    margin-left: 7rem;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5em;
+    margin-top: 0.5rem;
+  }
+
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all 0.3s;
+  }
+  nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+  }
+  .signin {
+    color: orange;
+  }
+  .signin:hover {
+    color: white;
+  }
+
+  .logoimg {
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+  }
+
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin: 2rem 2rem 2rem 2rem;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .circle {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  /* FORSIDETXT */
+  #splashtext {
+    color: white;
+    font-family: semplicitapro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    position: absolute;
+    left: 50px;
+    bottom: 90px;
+  }
+
+  #splashtext2 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+}
+
+/* WEB */
+@media only screen and (min-width: 767px) {
+  /* LOGO */
+  .logoimg {
+    max-width: 40%;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+  }
+
+  /* NAVIGATION BAR */
+  .flex {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    list-style: none;
+    margin-left: 65rem;
+    margin-top: -11rem;
+  }
+
+  .signin {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-right: 2rem;
+    margin-top: -1rem;
+    font-weight: 800;
+  }
+
+  /* TIL STEP BY STEP GUIDEN */
+  .circle {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    max-width: 30%;
+  }
+
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin: 5rem 5rem 5rem 5rem;
+  }
+
+  /* FORSIDETXT */
+  #splashtext {
+    color: white;
+    font-family: semplicitapro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+  }
+
+  #splashtext2 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+}
