@@ -21,9 +21,6 @@ nav ul li {
   color: var(--blue);
 }
 
-body {
-  margin: 0;
-}
 
 a:link {
   text-decoration: none;

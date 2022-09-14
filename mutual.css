@@ -37,6 +37,10 @@ html {
   --space-xl: 5rem;
 }
 
+body {
+  margin: 0;
+}
+
 /* FOOTER */
 
 /* MOBILE */
