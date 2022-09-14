@@ -36,3 +36,95 @@ html {
   --space-l: 4rem;
   --space-xl: 5rem;
 }
+
+/* FOOTER */
+
+/* MOBILE */
+@media only screen and (max-width: 767px) {
+  footer {
+    background-color: #009cb2;
+    font-size: 0.5em;
+    width: 100%;
+    height: 150px;
+    font-family: semplicitapro, sans-serif;
+    font-style: normal;
+    color: white;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    margin-left: 3em;
+    margin-top: 2em;
+  }
+
+  #copy {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    text-align: end;
+    margin-right: 2em;
+    margin-top: 3em;
+  }
+
+  .container {
+    max-width: 15%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .col1,
+  .col2,
+  .col3 {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  footer {
+    background-color: #009cb2;
+    font-size: 0.8em;
+    width: 100%;
+    height: 290px;
+    font-family: semplicitapro, sans-serif;
+    font-style: normal;
+    color: white;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3em;
+    margin-left: 3em;
+    margin-top: 5rem;
+  }
+
+  #copy {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+    text-align: end;
+    margin-top: 2em;
+    margin-right: 2rem;
+    font-size: 0.7rem;
+  }
+
+  .container {
+    max-width: 13%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+
+  .col1,
+  .col2,
+  .col3,
+  .col4 {
+    margin-top: 2rem;
+  }
+  .col1 p,
+  .col2 p,
+  .col3 p,
+  .col4 p {
+    margin-top: 1rem;
+  }
+}
