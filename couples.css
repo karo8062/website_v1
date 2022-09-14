@@ -5,12 +5,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    place-items: center;
   }
   /* order så billedet kommer først i mobile version men sidst i web-version*/
   .order {
     order: 1;
   }
+
+  .couples {
+    max-width: 1000px;
+  }
 }
+
 h3 {
   font-family: helvetica_light;
   font-size: ;
@@ -18,10 +24,16 @@ h3 {
   font-weight: ;
   margin-bottom: ;
   color: var(--orange);
+  margin-top: 1rem;
 }
 .blå {
   color: var(--blue);
 }
 .couples {
-  padding: ;
+  margin: 4rem;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 3.5rem;
 }
