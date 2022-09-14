@@ -4,7 +4,7 @@ let rejser;
 let filter = "alle";
 const header = document.querySelector("h3");
 
-const filterKnapper = document.querySelectorAll("header button");
+const filterKnapper = document.querySelectorAll("button");
 filterKnapper.forEach((knap) => knap.addEventListener("click", filtrerPakker));
 
 function filtrerPakker() {
@@ -26,15 +26,18 @@ function vis() {
   const destination = document.querySelector("#destination");
   const skabelon = document.querySelector("template").content;
   destination.textContent = "";
+  console.log("pakkeloesninger");
   rejser.forEach((pakkeloesninger) => {
     if (filter == pakkeloesninger.pakke || filter == "alle") {
       const klon = skabelon.cloneNode(true);
-      klon.querySelector("img").src = "fotos/" + pakkeloesninger.billedeforside + ".webp";
-      klon.querySelector("img").alt = pakkeloesninger.billedeforside;
+      klon.querySelector("img").src = "fotos/" + pakkeloesninger.billednavn;
       klon.querySelector("article").addEventListener("click", () => visPopup(pakkeloesninger));
       klon.querySelector("h2").textContent = pakkeloesninger.destination;
+      klon.querySelector(".beskrivelse_aktivitet").textContent = pakkeloesninger.beskrivelse_aktivitet;
+      klon.querySelector(".beskrivelse_hotel").textContent = pakkeloesninger.beskrivelse_hotel;
+      klon.querySelector(".beskrivelse_restaurant").textContent = pakkeloesninger.beskrivelse_restaurant;
       klon.querySelector(".pakke").textContent = pakkeloesninger.pakke;
-      klon.querySelector(".pris").textContent = pakkeloesninger.pris + " kr.";
+      klon.querySelector(".pris").textContent = "Pris: " + pakkeloesninger.pris + ",-";
       klon.querySelector("article").style.borderRadius = "lem";
       destination.appendChild(klon);
     }
@@ -49,9 +52,12 @@ function visPopup(pakkeData) {
   popup.style.display = "block";
   popup.style.display = "flex";
   popup.querySelector("h2").textContent = pakkeData.destination;
-  popup.querySelector(".hotel").textContent = pakkeData.hotel;
-  popup.querySelector(".restauranter").textContent = pakkeData.restauranter;
-  popup.querySelector(".oplevelser").textContent = pakkeData.oplevelser;
-  popup.querySelector(".pris").textContent = pakkeData.pris + " kr.";
+  popup.querySelector("img").src = "popup_fotos/" + pakkeData.popup_billede;
+  popup.querySelector(".hotel").textContent = "Hotel: " + pakkeData.hotel;
+  popup.querySelector(".restauranter").textContent = "Restaurant: " + pakkeData.restauranter;
+  popup.querySelector(".oplevelser").textContent = "Activities: " + pakkeData.oplevelser;
+  popup.querySelector(".popup_beskrivelse").textContent = pakkeData.popup_beskrivelse;
+  popup.querySelector(".pris").textContent = "Pris:" + pakkeData.pris + ",-";
 }
+
 hentData(); //loop

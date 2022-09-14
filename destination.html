@@ -4,41 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/hbq1ujc.css" />
     <link rel="stylesheet" href="destination.css" />
     <link rel="stylesheet" href="mutual.css" />
     <title>Destinations</title>
   </head>
   <body>
     <header>
+      <div>
+        <a href="index.html"><img class="logo" src="ikoner/logo_sort.webp" alt="company_logo" /></a>
+      </div>
       <nav>
-        <h3 class="filteroverskrift">Alle</h3>
-        <div class="knapper">
-          <button data-pakke="alle" class="valgt">Alle</button>
-          <button data-pakke="Basic">Basic</button>
-          <button data-pakke="Premium">Premium</button>
-          <button data-pakke="Exclusive">Exclusive</button>
-        </div>
+        <ul>
+          <li class="toggle_about"><a href="about.html">ABOUT</a></li>
+          <li class="toggle_destination"><a href="destination.html">DESTINATION</a></li>
+          <li class="toggle_couples"><a href="couples.html">COUPLES</a></li>
+        </ul>
       </nav>
+      <p class="sign_in">SIGN IN</p>
     </header>
 
+    <div><img class="header_billede" src="fotos/header_billede.webp" alt="romantisk_billede" /></div>
+
+    <div class="filtre_buttons">
+      <div>
+        <h3 class="filteroverskrift">Alle</h3>
+      </div>
+      <div class="knapper">
+        <button data-pakke="alle" class="valgt">Alle</button>
+        <button data-pakke="Basic">Basic</button>
+        <button data-pakke="Premium">Premium</button>
+        <button data-pakke="Exclusive">Exclusive</button>
+      </div>
+    </div>
     <main id="destination"></main>
 
     <template>
       <article>
         <h2 class="destination"></h2>
-        <img class="billedeforside" src="" alt="" />
+        <img src="" alt="" />
         <h3 class="pakke"></h3>
-        <h3 class="pris"></h3>
+        <div class="gold_line"></div>
+        <ul>
+          <li class="beskrivelse_aktivitet"></li>
+          <li class="beskrivelse_hotel"></li>
+          <li class="beskrivelse_restaurant"></li>
+        </ul>
+        <p class="pris"></p>
+        <button class="bestil_rejse">Bestil rejse</button>
       </article>
     </template>
 
     <div id="popup">
       <article>
         <h2 class="destination"></h2>
-        <h3 class="hotel"></h3>
-        <h3 class="restauranter"></h3>
-        <h3 class="oplevelser"></h3>
-        <h3 class="pris"></h3>
+        <div class="gold_line"></div>
+        <div class="infoboks">
+          <img class="popup_billede1" src="" alt="" />
+          <div>
+            <p class="hotel">Hotel:</p>
+            <p class="restauranter">Restaurant:</p>
+            <p class="oplevelser">Activities:</p>
+            <div class="containerline"></div>
+            <p class="popup_beskrivelse"></p>
+            <p class="pris"></p>
+          </div>
+        </div>
+        <button class="bestil_rejse">Bestil rejse</button>
       </article>
     </div>
 

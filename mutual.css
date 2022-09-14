@@ -1,4 +1,38 @@
+/*-----------FONTE------------*/
 @font-face {
-  font-family: helvetica_medium;
+  font-family: helvetica_medium; /*Bruges i navigation bar*/
   src: url(fonts/HelveticaNeueMedium.ttf);
+}
+
+@font-face {
+  font-family: helvetica_light; /*bruges til brødtekst*/
+  src: url(fonts/HelveticaNeueLight.ttf);
+}
+@font-face {
+  font-family: helvetica_bold; /*bruges til h2 og h3*/
+  src: url(fonts/HelveticaNeueBd.ttf);
+}
+
+p,
+h3,
+li {
+  font-family: helvetica_light;
+}
+
+h2 {
+  font-family: helvetica_bold;
+}
+
+html {
+  /* farve variabler */
+  --blue: #1b8fad;
+  --orange: #ce6433;
+  --guld: #ba9929;
+
+  /* gap variabler */
+  --space-xs: 1rem;
+  --space-s: 2rem;
+  --space-m: 3rem;
+  --space-l: 4rem;
+  --space-xl: 5rem;
 }
