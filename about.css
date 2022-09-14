@@ -35,6 +35,7 @@ h1 {
   text-align: center;
   color: var(--blue);
   font-size: 3rem;
+  border-bottom: 3px var(--orange) solid;
 }
 
 /* inhold */
