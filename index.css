@@ -18,15 +18,12 @@
   position: absolute;
 }
 
-ul {
-  margin-top: 2rem;
-}
-
 h3 {
   font-weight: 800;
 }
 
-/* NAVIGATION */
+/* NAVIGATION HOVER*/
+
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
@@ -70,8 +67,8 @@ nav {
 }
 
 .signin {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   margin-top: 3.5rem;
 }
 
@@ -79,7 +76,6 @@ ul {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 5em;
-  margin-top: 0.5rem;
 }
 
 .grid_1-1-1-1 {

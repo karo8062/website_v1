@@ -7,29 +7,6 @@ main {
   margin: 0 auto;
 }
 
-/* header */
-header {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.sign_in {
-  display: flex;
-  justify-content: end;
-  margin-right: var(--space-s);
-  margin-top: var(--space-m);
-  font-family: helvetica_bold;
-  color: var(--orange);
-}
-nav ul li {
-  margin-left: -4rem;
-  text-decoration: none;
-  font-family: helvetica_bold;
-  list-style-type: none;
-  line-height: 1.5rem;
-  color: var(--blue);
-}
-
 /* Overskriften */
 h1 {
   text-align: center;
