@@ -1,10 +1,5 @@
 /* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
 
-header {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
 .sign_in {
   display: flex;
   justify-content: end;
@@ -39,10 +34,10 @@ h3 {
   line-height: ;
   font-weight: ;
   margin-bottom: ;
-  color: #ce6433;
+  color: var(--orange);
 }
-element_4 h3 {
-  color: #59a1b8;
+.blå {
+  color: var(--blue);
 }
 .couples {
   padding: ;
