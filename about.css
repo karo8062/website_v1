@@ -34,7 +34,10 @@ nav ul li {
 h1 {
   text-align: center;
   color: var(--blue);
-  font-size: 3rem;
+  font-size: 2rem;
+  border-bottom: 3px var(--orange) solid;
+  margin-inline: 9rem;
+  line-height: 7rem;
 }
 
 /* inhold */
