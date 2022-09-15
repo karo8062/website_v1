@@ -1,3 +1,8 @@
+.toggle_couples {
+  color: orange;
+  border-bottom: solid orange 1px;
+}
+
 /* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
 
 @media (min-width: 600px) {
