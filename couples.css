@@ -50,7 +50,10 @@ p {
   margin-top: 1rem;
   margin-bottom: 3.5rem;
 }
+.blå {
+  color: var(--blue);
 /* Overskriften */
+}
 h1 {
   text-align: center;
   color: var(--blue);
@@ -59,6 +62,7 @@ h1 {
   margin-inline: 9rem;
   line-height: 7rem;
 }
+
 /* Main */
 img {
   max-width: 100%;
