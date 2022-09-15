@@ -137,28 +137,9 @@ nav {
     margin-left: 7rem;
   }
 
-  /* .flex {
-    display: flex;
-    flex-direction: row;
-    margin-top: 3.5rem;
-    margin-right: var(--space-m);
-    gap: 5rem;
-    justify-content: center;
-  }
-
   .signin {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3.5rem;
-    align-items: flex-end;
-    margin-right: 2rem;
+    color: rgb(35, 35, 35);
   }
-
-  ul {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 5em;
-  } */
 
   /* TIL STEP BY STEP GUIDEN */
   .circle {
