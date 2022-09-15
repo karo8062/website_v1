@@ -1,6 +1,5 @@
 .toggle_about {
   color: orange;
-  border-bottom: solid orange 1px;
 }
 
 /* Main */
@@ -17,7 +16,7 @@ h1 {
   text-align: center;
   color: var(--blue);
   font-size: 2rem;
-  border-bottom: 3px var(--orange) solid;
+  border-bottom: 3px orange solid;
   margin-inline: 9rem;
   line-height: 7rem;
 }
@@ -33,7 +32,7 @@ h1 {
   margin: 2rem;
 }
 .linje {
-  border: 1.5px var(--orange) solid;
+  border: 1.5px orange solid;
   margin-inline: 9rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
