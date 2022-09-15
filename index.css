@@ -13,6 +13,25 @@
   max-width: none;
 }
 
+.arrow_down {
+  animation-name: bouncing_kf;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  margin-left: 34rem;
+  margin-bottom: -4rem;
+}
+
+@keyframes bouncing_kf {
+  from {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(20%);
+  }
+}
+
 .logo {
   max-width: 100%;
   position: absolute;
@@ -20,21 +39,6 @@
 
 /* NAVIGATION HOVER*/
 
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all 0.3s;
-}
-nav ul li a:hover {
-  color: rgb(255, 255, 255);
-  font-size: 1.1rem;
-}
-.signin {
-  color: orange;
-}
-.signin:hover {
-  color: white;
-}
 
 .logoimg {
   max-width: 100%;

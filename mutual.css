@@ -48,6 +48,24 @@ body {
   margin: 0;
 }
 
+/*NAV*/
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.3s;
+}
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+}
+.signin {
+  color: orange;
+}
+.signin:hover {
+  color: white;
+}
+
 /* FOOTER */
 /* MOBILE */
 @media only screen and (max-width: 767px) {
@@ -75,6 +93,7 @@ body {
     text-align: end;
     margin-right: 2em;
     margin-top: 3em;
+    grid-column: 2 / span3;
   }
 
   .container {
