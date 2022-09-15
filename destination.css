@@ -207,14 +207,3 @@ article .gold_line {
     max-width: 60%;
   }
 }
-/* luk knappen på popupen */
-#luk {
-  position: fixed;
-  padding: 1rem;
-  font-size: 3rem;
-  font-weight: bolder;
-  color: white;
-  cursor: pointer;
-  margin-right: 45rem;
-  margin-bottom: 56rem;
-}
