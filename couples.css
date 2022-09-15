@@ -40,7 +40,14 @@
     margin: auto;
   }
 }
-p {
+<<<<<<< HEAD .blå {
+  color: var(--blue);
+}
+.couples {
+  margin: 4rem;
+}
+
+=======>>>>>>>5acdbe0cec500e4662bbd9a6b884cf48d875fd2b p {
   margin-top: 1rem;
   margin-bottom: 3.5rem;
 }
