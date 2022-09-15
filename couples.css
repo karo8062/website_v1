@@ -1,6 +1,6 @@
 .toggle_couples {
   color: orange;
-  border-bottom: solid orange 1px;
+  text-decoration: underline;
 }
 
 /* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/

@@ -150,7 +150,7 @@ nav ul li a:before {
 }
 nav ul li a:hover {
   color: orange;
-  border-bottom: solid orange 1px;
+  text-decoration: underline;
 }
 
 /* INDEX LOGO */
