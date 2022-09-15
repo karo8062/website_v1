@@ -67,6 +67,8 @@ a:hover {
   line-height: 0;
   color: var(--orange);
 }
+
+/* virker ikke???*/
 .blå {
   color: var(--blue);
 }
