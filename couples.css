@@ -46,9 +46,7 @@ HEAD .blå {
 .couples {
   margin: 4rem;
 }
-p {
-  margin-top: 1rem;
-}
+
 .blå {
   color: var(--blue);
   /* Overskriften */

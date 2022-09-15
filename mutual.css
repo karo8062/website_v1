@@ -67,9 +67,24 @@ nav ul li a:hover {
   font-size: 1.1rem;
 }
 
+nav {
+  display: grid;
+}
+.signin {
+  padding-top: var(--space-m);
+  grid-column: 3;
+  display: grid;
+  justify-content: end;
+  margin-right: var(--space-m);
+}
 /* FOOTER */
 /* MOBILE */
 @media only screen and (max-width: 767px) {
+  .signin {
+    padding-top: var(--space-m);
+    margin-left: var(--space-m);
+    grid-column: 3;
+  }
   footer {
     background-color: #009cb2;
     font-size: 0.5em;
@@ -165,12 +180,24 @@ nav ul li a:hover {
 /* NAV HOVER */
 nav ul li a,
 nav ul li a:after,
-nav ul li a:before {
+nav ul li a:before,
+.signin {
   transition: all 0.2s;
 }
 nav ul li a:hover {
   color: orange;
   text-decoration: underline;
+}
+
+.signin:hover {
+  color: orange;
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+
+.signin:after,
+.signin:before {
+  transition: all 0.2s;
 }
 
 /* INDEX LOGO */
