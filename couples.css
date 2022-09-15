@@ -1,11 +1,34 @@
+.toggle_couples {
+  color: orange;
+  text-decoration: underline;
+}
+
 /* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
 
+/* virker ikke???*/
+.blå {
+  color: var(--blue);
+}
+.couples p {
+  max-width: 45ch;
+  font-size: 1rem;
+  color: rgb(10, 10, 10);
+  line-height: 1.5;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
 @media (min-width: 600px) {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     place-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   /* order så billedet kommer først i mobile version men sidst i web-version*/
   .order {
@@ -14,17 +37,17 @@
 
   .couples {
     max-width: 1000px;
+    margin: auto;
   }
 }
-
-.blå {
+<<<<<<< HEAD .blå {
   color: var(--blue);
 }
 .couples {
   margin: 4rem;
 }
 
-p {
+=======>>>>>>>5acdbe0cec500e4662bbd9a6b884cf48d875fd2b p {
   margin-top: 1rem;
   margin-bottom: 3.5rem;
 }
