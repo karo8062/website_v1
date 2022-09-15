@@ -19,8 +19,8 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in;
-  margin-left: 34rem;
   margin-bottom: -4rem;
+  margin-left: 17rem;
 }
 
 @keyframes bouncing_kf {
@@ -38,7 +38,6 @@
 }
 
 /* NAVIGATION HOVER*/
-
 
 .logoimg {
   max-width: 100%;
@@ -97,6 +96,7 @@ ul {
   border: 2px solid black;
   border-radius: 50%;
   padding: 10px;
+  max-width: 80%;
 }
 
 /* FORSIDETXT */
@@ -204,6 +204,24 @@ ul {
     font-weight: 700;
   }
 
+  .arrow_down {
+    animation-name: bouncing_kf;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    margin-left: 34rem;
+    margin-bottom: -4rem;
+  }
+
+  @keyframes bouncing_kf {
+    from {
+      transform: translateY(-20%);
+    }
+    to {
+      transform: translateY(20%);
+    }
+  }
   /* TRAVEL PIC */
   .travelimg {
     max-width: 100%;
