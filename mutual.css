@@ -21,12 +21,15 @@
 }
 
 p,
-h3,
 li {
   font-family: helvetica_light;
 }
 
 h2 {
+  font-family: helvetica_bold;
+}
+
+h3 {
   font-family: helvetica_medium;
 }
 
@@ -46,6 +49,24 @@ html {
 
 body {
   margin: 0;
+}
+
+/*NAV*/
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.3s;
+}
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+}
+.signin {
+  color: orange;
+}
+.signin:hover {
+  color: white;
 }
 
 /* FOOTER */
@@ -75,6 +96,7 @@ body {
     text-align: end;
     margin-right: 2em;
     margin-top: 3em;
+    grid-column: 2 / span3;
   }
 
   .container {
