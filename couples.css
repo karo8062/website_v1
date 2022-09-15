@@ -88,9 +88,10 @@ a:hover {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0px;
     gap: 10px;
     place-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   /* order så billedet kommer først i mobile version men sidst i web-version*/
   .order {
@@ -99,16 +100,9 @@ a:hover {
 
   .couples {
     max-width: 1000px;
+    margin: auto;
   }
 }
-
-.blå {
-  color: var(--blue);
-}
-.couples {
-  margin: 4rem;
-}
-
 p {
   margin-top: 1rem;
   margin-bottom: 3.5rem;
