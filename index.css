@@ -63,23 +63,11 @@ nav {
   margin-left: 7rem;
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3.5rem;
-}
-
-.signin {
-  /* display: flex; */
-  /* flex-direction: column; */
-  margin-top: 3.5rem;
-}
-
-ul {
+/* ul {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 5em;
-}
+} */
 
 .grid_1-1-1-1 {
   display: grid;
@@ -149,7 +137,7 @@ ul {
     margin-left: 7rem;
   }
 
-  .flex {
+  /* .flex {
     display: flex;
     flex-direction: row;
     margin-top: 3.5rem;
@@ -170,7 +158,7 @@ ul {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 5em;
-  }
+  } */
 
   /* TIL STEP BY STEP GUIDEN */
   .circle {

@@ -62,12 +62,12 @@ nav ul li a:hover {
   color: rgb(255, 255, 255);
   font-size: 1.1rem;
 }
-.signin {
+/* .signin {
   color: orange;
 }
 .signin:hover {
   color: white;
-}
+} */
 
 /* FOOTER */
 /* MOBILE */
@@ -182,37 +182,38 @@ nav ul li a:hover {
   position: absolute;
 }
 
-.nav2 {
+/* .nav2 {
   margin-left: 5.5rem;
   list-style: none;
-  /* position: absolute; */
-}
+} */
 
-.ul2 {
+/* .ul2 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10em;
   margin-top: 1rem;
   border: white solid 1.5rem;
-}
+} */
 
 /* NAVIGATION WEB */
+/*  */
+
 @media (min-width: 800px) {
-  .flex2 {
+  .menu {
     display: flex;
     flex-direction: row;
-    /* margin-top: 3.5rem; */
+    list-style: none;
     gap: 5rem;
-    justify-content: center;
+    padding-top: 4.5rem;
+    padding-left: 3rem;
   }
-
-  .ul2 {
-    border: white solid 3rem;
-  }
-
-  .signin2 {
+}
+@media (max-width: 800px) {
+  .menu {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    list-style: none;
+    /* margin-top: 3rem; */
+    padding-top: 3.5rem;
   }
 }
