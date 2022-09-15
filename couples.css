@@ -20,6 +20,10 @@
   margin-bottom: 30px;
 }
 
+h1 {
+  white-space: nowrap;
+}
+
 /* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
 @media (min-width: 800px) {
   .grid_1-1 {
@@ -56,7 +60,7 @@ h1 {
   color: var(--blue);
   font-size: 2rem;
   border-bottom: 3px orange solid;
-  margin-inline: 9rem;
+  margin-inline: 5rem;
   line-height: 7rem;
 }
 

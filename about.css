@@ -13,12 +13,13 @@ main {
 
 /* Overskriften */
 h1 {
-  text-align: center;
+  text-align: start;
   color: var(--blue);
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-bottom: 3px orange solid;
-  margin-inline: 9rem;
+  margin-inline: 5rem;
   line-height: 7rem;
+  white-space: nowrap;
 }
 
 /* inhold */
@@ -36,4 +37,9 @@ h1 {
   margin-inline: 9rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+h1 {
+  display: grid;
+  justify-content: center;
 }
