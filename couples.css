@@ -48,11 +48,10 @@ HEAD .blå {
 }
 p {
   margin-top: 1rem;
-  margin-bottom: 3.5rem;
 }
 .blå {
   color: var(--blue);
-/* Overskriften */
+  /* Overskriften */
 }
 h1 {
   text-align: center;
