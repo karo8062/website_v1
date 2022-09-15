@@ -27,7 +27,7 @@ li {
 }
 
 h2 {
-  font-family: helvetica_bold;
+  font-family: helvetica_medium;
 }
 
 html {
@@ -83,6 +83,9 @@ body {
     flex-direction: row;
   }
 
+  footer h3 {
+    font-weight: bold;
+  }
   .col1,
   .col2,
   .col3 {
@@ -147,7 +150,7 @@ nav ul li a:before {
 }
 nav ul li a:hover {
   color: orange;
-  border-bottom: solid orange 1px;
+  text-decoration: underline;
 }
 
 /* INDEX LOGO */

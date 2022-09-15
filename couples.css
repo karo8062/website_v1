@@ -1,72 +1,9 @@
-.couples {
-  /* Main */
-  max-width: 900px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-img {
-  max-width: 100%;
-  margin-bottom: 10px;
+.toggle_couples {
+  color: orange;
+  text-decoration: underline;
 }
 
-.header_billede {
-  margin-bottom: 100px;
-}
-
-/*.sign_in {
-  display: flex;
-  justify-content: end;
-  margin-right: var(--space-s);
-  font-family: helvetica_bold;
-  color: var(--orange);
-  margin-bottom: 3px;
-  max-width: none;
-}
-
-.logo {
-  display: flex;
-  justify-content: left;
-}
-
-header nav {
-  overflow-x: auto;
-}
-
-header nav ul {
-  margin-top: 1.6rem;
-  /*padding: 0.2rem;
-  margin-left: 250px;
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  max-width: none;
-}
-
-header nav li {
-  text-align: center;
-  width: 7rem;
-  flex-shrink: 0;
-  max-width: none;
-}
-
-a {
-  font-family: helvetica_bold;
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: var(--blue);
-}
-
-a:hover {
-  color: var(--orange);
-}
-*/
-.couples h3 {
-  font-family: helvetica_bold;
-  font-size: 1.2rem;
-  line-height: 0;
-  color: var(--orange);
-}
+/* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
 
 /* virker ikke???*/
 .blå {

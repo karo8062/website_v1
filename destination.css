@@ -1,3 +1,8 @@
+.toggle_destination {
+  color: orange;
+  border-bottom: solid orange 1px;
+}
+
 .filtre_buttons {
   display: flex;
   justify-content: center;
@@ -10,7 +15,7 @@
 }
 button {
   color: var(--blue);
-  font-family: helvetica_medium;
+  font-family: helvetica_light;
   font-size: var(--space-xs);
 
   border: none;
@@ -181,7 +186,7 @@ article .gold_line {
   .filteroverskrift {
     display: flex;
     margin-right: 55rem;
-    font-family: helvetica_bold;
+    font-family: helvetica_light;
     color: var(--blue);
   }
 
