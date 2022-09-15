@@ -21,14 +21,14 @@
 }
 
 /* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     place-items: center;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 10rem;
   }
   /* order så billedet kommer først i mobile version men sidst i web-version*/
   .order {
@@ -40,10 +40,34 @@
     margin: auto;
   }
 }
+HEAD .blå {
+  color: var(--blue);
+}
+.couples {
+  margin: 4rem;
+}
 p {
   margin-top: 1rem;
   margin-bottom: 3.5rem;
 }
 .blå {
   color: var(--blue);
+/* Overskriften */
+}
+h1 {
+  text-align: center;
+  color: var(--blue);
+  font-size: 2rem;
+  border-bottom: 3px orange solid;
+  margin-inline: 9rem;
+  line-height: 7rem;
+}
+
+/* Main */
+img {
+  max-width: 100%;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
