@@ -5,28 +5,48 @@
 
 /* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
 
+/* virker ikke???*/
+.blå {
+  color: var(--blue);
+}
+.couples p {
+  max-width: 45ch;
+  font-size: 1rem;
+  color: rgb(10, 10, 10);
+  line-height: 1.5;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* @mediaquery til at sætte indholdet i grid når skærmen er over 660pixels*/
 @media (min-width: 600px) {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0px;
     gap: 10px;
+    place-items: center;
   }
   /* order så billedet kommer først i mobile version men sidst i web-version*/
   .order {
     order: 1;
   }
+
+  .couples {
+    max-width: 1000px;
+  }
 }
-h3 {
-  font-family: helvetica_light;
-  font-size: ;
-  line-height: ;
-  font-weight: ;
-  margin-bottom: ;
-  color: var(--orange);
-}
+
 .blå {
   color: var(--blue);
 }
 .couples {
-  padding: ;
+  margin: 4rem;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 3.5rem;
 }
