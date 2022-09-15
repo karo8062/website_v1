@@ -66,12 +66,6 @@ nav ul li a:hover {
   color: rgb(255, 255, 255);
   font-size: 1.1rem;
 }
-/* .signin {
-  color: orange;
-}
-.signin:hover {
-  color: white;
-} */
 
 /* FOOTER */
 /* MOBILE */
@@ -183,24 +177,9 @@ nav ul li a:hover {
 .logo2 {
   max-width: 100%;
   margin-left: 0.5rem;
+  margin-top: 0.5rem;
   position: absolute;
 }
-
-/* .nav2 {
-  margin-left: 5.5rem;
-  list-style: none;
-} */
-
-/* .ul2 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 10em;
-  margin-top: 1rem;
-  border: white solid 1.5rem;
-} */
-
-/* NAVIGATION WEB */
-/*  */
 
 @media (min-width: 800px) {
   .menu {
@@ -219,5 +198,28 @@ nav ul li a:hover {
     list-style: none;
     /* margin-top: 3rem; */
     padding-top: 3.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .menu2 {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 5rem;
+    padding-top: 3rem;
+    margin-left: 9rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .menu2 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    /* margin-top: 3rem; */
+    padding-top: 2rem;
+    padding-left: 8rem;
+    padding-bottom: 2.5rem;
   }
 }
