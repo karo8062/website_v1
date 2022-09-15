@@ -13,6 +13,13 @@
   src: url(fonts/HelveticaNeueBd.ttf);
 }
 
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
+
 p,
 h3,
 li {
@@ -37,8 +44,11 @@ html {
   --space-xl: 5rem;
 }
 
-/* FOOTER */
+body {
+  margin: 0;
+}
 
+/* FOOTER */
 /* MOBILE */
 @media only screen and (max-width: 767px) {
   footer {
@@ -126,5 +136,58 @@ html {
   .col3 p,
   .col4 p {
     margin-top: 1rem;
+  }
+}
+
+/* NAV HOVER */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.2s;
+}
+nav ul li a:hover {
+  color: orange;
+  border-bottom: solid orange 1px;
+}
+
+/* INDEX LOGO */
+.logo2 {
+  max-width: 100%;
+  margin-left: 0.5rem;
+  position: absolute;
+}
+
+.nav2 {
+  margin-left: 5.5rem;
+  list-style: none;
+  /* position: absolute; */
+}
+
+.ul2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10em;
+  margin-top: 1rem;
+  border: white solid 1.5rem;
+}
+
+/* NAVIGATION WEB */
+@media (min-width: 800px) {
+  .flex2 {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 3.5rem; */
+    gap: 5rem;
+    justify-content: center;
+  }
+
+  .ul2 {
+    border: white solid 3rem;
+  }
+
+  .signin2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
